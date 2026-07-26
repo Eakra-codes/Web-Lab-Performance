@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Project Registration</title>
+</head>
+ 
+<body>
+ 
+    <h1>Student Project Registration</h1>
+ 
+    <form action="http://127.0.0.1:3000/register" method="POST">
+ 
+        <p>
+            <label for="student-id">Student ID</label><br>
+            <input
+                id="student-id"
+                type="text"
+                name="id"
+                
+            >
+        </p>
+ 
+        <p>
+            <label for="student-name">Student Name</label><br>
+            <input
+                id="student-name"
+                type="text"
+                name="name"
+                
+            >
+        </p>
+ 
+        <p>
+            <label for="project-title">Project Title</label><br>
+            <input
+                id="project-title"
+                type="text"
+                name="projectTitle"
+                placeholder="Enter project title"
+                required
+            >
+        </p>
+ 
+        <p>
+            <label for="department">Department</label><br>
+            <input
+                id="department"
+                type="text"
+                name="department"
+                placeholder="Enter department name"
+                required
+            >
+        </p>
+ 
+        <button type="submit">Submit Project</button>
+ 
+    </form>
+ 
+    <hr>
+ 
+    <h2>Search Student Project</h2>
+ 
+    <input
+        id="search-field"
+        type="text"
+        name="search"
+        placeholder="Enter Student ID"
+    >
+ 
+    <button id="search-button" type="button">Search</button>
+ 
+    <p id="search-details">Search details here</p>
+ 
+    <hr>
+ 
+    <h2>Student Project Details</h2>
+ 
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Key</th>
+            <th>Value</th>
+        </tr>
+ 
+        <tr>
+            <td>Student ID</td>
+            <td id="display-student-id"></td>
+        </tr>
+ 
+        <tr>
+            <td>Student Name</td>
+            <td id="display-student-name"></td>
+        </tr>
+ 
+        <tr>
+            <td>Project Title</td>
+            <td id="display-project-title"></td>
+        </tr>
+ 
+        <tr>
+            <td>Department</td>
+            <td id="display-department"></td>
+        </tr>
+    </table>
+ 
+    <script src="app.js"></script>
+ 
+</body>
+ 
+</html>
